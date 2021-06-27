@@ -62,7 +62,7 @@ body {
     text-align: right;
     color: var(--banner-color);
     font-size: 2rem;
-    margin-left: 50%;
+    margin-left: 66%;
 }
 
 .banner__title {
@@ -72,6 +72,14 @@ body {
     animation-iteration-count: infinite;
     transform: scale(.7);
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.modal-body .card-img {
+    filter: grayscale(0);
+}
+
+.modal-body img:hover {
+    transition: none;
 }
 
 @keyframes bouge {
@@ -138,7 +146,7 @@ body {
     border-radius: .3rem;
     margin-top: .6rem;
     -webkit-transform: scale(.97);
-    filter: grayscale(.7);
+    filter: grayscale(.6);
 }
 
 .card-img:hover {
@@ -164,37 +172,6 @@ body {
 .card-plat a:hover {
     text-decoration: none;
 }
-
-
-/* 
-@keyframes defilement {
-    0% {
-        background: url("../images/bg/bg1.jpg") no-repeat;
-    }
-    30% {
-        background: url('../images/bg/bg2.jpg') no-repeat;
-    }
-    40% {
-        background: url('../images/bg/bg5.jpg') no-repeat;
-    }
-       60% {
-        width: 350%;
-        background: url('../images/bg/bg6.jpg') no-repeat;
-    }
-    70% {
-        width: 350%;
-        background: url('../images/bg/bg7.jpg') no-repeat;
-    }
-    80% {
-        width: 350%;
-        background: url('../images/bg/bg8.jpg') no-repeat;
-    }
-    100% {
-        background: url('../images/bg/bg9.jpg') no-repeat;
-        width: 350%;
-    }
-}
- */
 
 
 /* responsive screen */
@@ -223,6 +200,35 @@ body {
     }
     
     .img-card {
-        filter: none;
+        filter: grayscale(0);
     }
+    /* 
+    @keyframes defilement {
+        0% {
+            background: url("../images/bg/bg1.jpg") no-repeat;
+        }
+        30% {
+            background: url('../images/bg/bg2.jpg') no-repeat;
+        }
+        40% {
+            background: url('../images/bg/bg5.jpg') no-repeat;
+        }
+           60% {
+            width: 350%;
+            background: url('../images/bg/bg6.jpg') no-repeat;
+        }
+        70% {
+            width: 350%;
+            background: url('../images/bg/bg7.jpg') no-repeat;
+        }
+        80% {
+            width: 350%;
+            background: url('../images/bg/bg8.jpg') no-repeat;
+        }
+        100% {
+            background: url('../images/bg/bg9.jpg') no-repeat;
+            width: 350%;
+        }
+    }
+     */
 }
