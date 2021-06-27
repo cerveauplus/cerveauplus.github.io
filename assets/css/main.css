@@ -78,7 +78,8 @@ body {
     filter: grayscale(0);
 }
 
-.modal-body img:hover {
+.modal-body .card-img:hover {
+    transform: none;
     transition: none;
 }
 
@@ -91,6 +92,7 @@ body {
     }
     40% {
         background: #ffd700;
+        transform: scale(.5);
     }
     60% {
         background: #6b5d0a;
@@ -99,17 +101,20 @@ body {
     70% {
         background: #fcd706;
         color: black;
+        transform: scale(.3);
     }
     80% {
         background: #f5e275;
         color: black;
+        transform: scale(.4);
     }
     90% {
         background: #f5bf0d;
         color: white;
+        transform: scale(.6);
     }
     100% {
-        transform: scale(1);
+        transform: scale(.5);
     }
 }
 
@@ -139,8 +144,8 @@ body {
 }
 
 .card-img {
-    width: max(93%);
-    height: max(7rem);
+    width: max(96%);
+    height: max(14rem);
     margin-left: 3%;
     margin-right: 1%;
     border-radius: .3rem;
