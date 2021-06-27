@@ -45,6 +45,10 @@ body {
     width: 100%;
     padding: 20%;
     height: max(22rem);
+    animation-duration: 15s;
+    animation-name: defilement;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .banner_section img {
@@ -59,6 +63,46 @@ body {
     color: var(--banner-color);
     font-size: 2rem;
     margin-left: 50%;
+}
+
+.banner__title {
+    animation-duration: 7s;
+    animation-name: bouge;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    transform: scale(.7);
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes bouge {
+    0% {
+        transform: scale(.7);
+    }
+    30% {
+        transform: scale(.4);
+    }
+    40% {
+        background: #ffd700;
+    }
+    60% {
+        background: #6b5d0a;
+        color: white;
+    }
+    70% {
+        background: #fcd706;
+        color: black;
+    }
+    80% {
+        background: #f5e275;
+        color: black;
+    }
+    90% {
+        background: #f5bf0d;
+        color: white;
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 
@@ -122,14 +166,57 @@ body {
 }
 
 
+/* 
+@keyframes defilement {
+    0% {
+        background: url("../images/bg/bg1.jpg") no-repeat;
+    }
+    30% {
+        background: url('../images/bg/bg2.jpg') no-repeat;
+    }
+    40% {
+        background: url('../images/bg/bg5.jpg') no-repeat;
+    }
+       60% {
+        width: 350%;
+        background: url('../images/bg/bg6.jpg') no-repeat;
+    }
+    70% {
+        width: 350%;
+        background: url('../images/bg/bg7.jpg') no-repeat;
+    }
+    80% {
+        width: 350%;
+        background: url('../images/bg/bg8.jpg') no-repeat;
+    }
+    100% {
+        background: url('../images/bg/bg9.jpg') no-repeat;
+        width: 350%;
+    }
+}
+ */
+
+
 /* responsive screen */
 
 @media screen and(max-width:960px) {
     .header__bottom {
         height: max(25rem);
     }
+    .banner__section {
+        background: url("../images/bg/header-font2.jpg") no-repeat;
+        width: 100%;
+        padding: 20%;
+        height: max(22rem);
+        animation-duration: 15s;
+        animation-name: defilement;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    }
 }
 
+
+}
 @media screen and (max-width:760px) {
     .header__bottom {
         height: max(22rem);
