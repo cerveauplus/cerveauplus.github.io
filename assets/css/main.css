@@ -144,8 +144,8 @@ body {
 }
 
 .card-img {
-    width: max(96%);
-    height: max(14rem);
+    width: max(90%);
+    height: max(13rem);
     margin-left: 3%;
     margin-right: 1%;
     border-radius: .3rem;
