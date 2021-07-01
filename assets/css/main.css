@@ -146,9 +146,9 @@ body {
 }
 
 .card-img {
-    width: max(90%);
+    width: max(80%);
     height: max(13rem);
-    margin-left: 3%;
+    margin-left: 0%;
     margin-right: 1%;
     border-radius: .3rem;
     margin-top: .6rem;
@@ -336,7 +336,7 @@ footer hr {
 .copy__section .hearts {
     color: #c52467;
     font-weight: 600;
-    font-size: 38px;
+    font-size: 28px;
     margin-top: 12rem;
 }
 
