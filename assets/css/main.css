@@ -249,10 +249,6 @@ footer {
 
 /* CONTACT  */
 
-.form__block {
-    height: max(35rem);
-}
-
 h3 {
     text-align: center;
 }
@@ -307,8 +303,9 @@ input[type=reset]:hover {
     padding: 20px;
     border-radius: 5px;
     background-color: #f2f2f2;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 13%;
+    margin-right: 13%;
+    height: max(37rem);
 }
 
 ul {
@@ -330,13 +327,13 @@ footer hr {
 
 .copy__section p a {
     color: #2f82cf;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .copy__section .hearts {
     color: #c52467;
     font-weight: 600;
-    font-size: 38px;
+    font-size: 28px;
     margin-top: 12rem;
 }
 
@@ -345,7 +342,7 @@ footer hr {
 
 .remote__button {
     padding: .1rem 1rem;
-    margin-left: 85rem;
+    margin-left: 120ch;
     margin-bottom: 3rem;
     margin-right: 2rem;
     color: white;
@@ -358,4 +355,24 @@ footer hr {
     color: black;
     font-weight: 600;
     font-size: 18px;
+}
+
+
+/* C'est sur le bouton de remonter que nous sommes */
+
+@media screen and ( max-width:760px) {
+    .form__block {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .remote__button {
+        padding: .1rem 1rem;
+        margin-left: 60ch;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+        color: white;
+        background-color: rgb(245, 190, 9);
+        cursor: pointer;
+        font-size: 20px;
+    }
 }
