@@ -1,15 +1,38 @@
-@import url("fontawesome.css");
-
 /* COLORS */
 
+:root {
+    --body-bg-color: #05131a;
+    --body-color: white;
+    /* --navbar-bg-color: #ffd700; */
+    --navbar-bg-color: #05131a;
+    /* --navbar-color: black; */
+    --banner-color: white;
+    --header-bg-color: ;
+    --wave-color: #2173dd;
+    --aleatoire-title-color: black;
+    --footer-bg-color: #05131a;
+}
+
+path {
+    background: red;
+}
+
+
+/* END COLORS */
+
+@import url("fontawesome.css");
 body {
-    --body-bg-color: ;
+    background: red;
+}
+
+.is-preload {
     background: var(--body-bg-color);
+    color: var(--body-color);
 }
 
 .header__bottom__section,
 .bg-color {
-    --navbar-bg-color: #ffd700;
+    background: var(--navbar-bg-color);
 }
 
 .banner__title {
@@ -23,6 +46,10 @@ body {
     background: var(--navbar-bg-color);
 }
 
+.nav-link {
+    color: var(--navbar-color);
+}
+
 .navbar-nav li a {
     font-weight: 600;
     font-style: bold;
@@ -32,6 +59,7 @@ body {
     height: 0;
     margin-top: -10%;
     border: 1px solid var(--header-bg-color);
+    background: var(--wave-color);
 }
 
 .svg__first {
@@ -67,6 +95,12 @@ body {
     margin-left: 66%;
 }
 
+.aleatoire__title {
+    color: var(--aleatoire-title-color);
+}
+
+
+/* 
 .banner__title {
     animation-duration: 7s;
     animation-name: bouge;
@@ -74,7 +108,7 @@ body {
     animation-iteration-count: infinite;
     transform: scale(.7);
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-}
+} */
 
 .modal-body .card-img {
     filter: grayscale(0);
@@ -180,6 +214,10 @@ body {
     text-decoration: none;
 }
 
+.garba-title {
+    color: black;
+}
+
 
 /* responsive screen */
 
@@ -241,7 +279,8 @@ body {
 /* FOOTER */
 
 footer {
-    background: linear-gradient( rgb(39, 39, 39), black, rgb(29, 23, 23));
+    /* background: linear-gradient( rgb(39, 39, 39), black, rgb(29, 23, 23)); */
+    background: var(--footer-bg-color);
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -306,7 +345,7 @@ input[type=reset]:hover {
 .form__block {
     padding: 20px;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background: var(--footer-form-color);
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -340,6 +379,16 @@ footer hr {
     margin-top: 12rem;
 }
 
+.follow__me .follow__p {
+    text-align: center;
+}
+
+.follow__p a {
+    color: white;
+    margin-right: .7rem;
+    font-size: 2.5rem;
+}
+
 
 /* Remote button */
 
@@ -358,4 +407,121 @@ footer hr {
     color: black;
     font-weight: 600;
     font-size: 18px;
+}
+
+
+/* Carousel garba */
+
+.div2 {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.div2:hover,
+.text-red:hover {
+    color: red !important
+}
+
+.div2:first-of-type {
+    /* For increasing performance 
+                         ID/Class should've been used. 
+                         For a small demo 
+                         it's okaish for now */
+    animation: showup 7s infinite;
+}
+
+.div2:last-of-type {
+    width: 0px;
+}
+
+.div2:last-of-type span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+    20% {
+        margin-left: -800px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+    30% {
+        width: 355px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 355px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+/* medium and up screens */
+
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
 }
