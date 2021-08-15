@@ -4,7 +4,7 @@
     --body-bg-color: white;
     --body-color: white;
     /* --navbar-bg-color: #ffd700; */
-    --navbar-bg-color: #05131a;
+    --navbar-bg-color: #04405c;
     /* --navbar-color: black; */
     --banner-color: white;
     --header-bg-color: ;
@@ -13,18 +13,10 @@
     --footer-bg-color: #05131a;
 }
 
-path {
-    background: red;
-}
-
 
 /* END COLORS */
 
 @import url("fontawesome.css");
-body {
-    background: red;
-}
-
 .is-preload {
     background: var(--body-bg-color);
     color: var(--body-color);
