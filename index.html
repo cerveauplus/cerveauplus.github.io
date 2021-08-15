@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS Restaut Website Tutorial</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+</head>
+
+<body class="is-preload">
+    <header>
+        <nav id="nav" class="navbar navbar-expand-md navbar-light bg-color fixed-top">
+            <a href="" class="navbar-brand" style="font-weight: 600;">MONDABALI</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#barre" aria-controls="barre" aria-expended="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="barre">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#paleatoires" class="nav-link">aléatoires</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#garba" class="nav-link ">Garba</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pizza" class="nav-link">Pizza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#dinner" class="nav-link">Dinner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#croissant" class="nav-link">Croissant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#caffe" class="nav-link">caffe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#breakfast" class="nav-link">Breakfast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="header__bottom__section" id="remote__button">
+        <div class="banner__section">
+            <h2 class="banner__title  float-right btn btn-dark">Ton dabali est calé !</h2>
+        </div>
+        </div>
+        <div class="section__wave mb-5">
+            <svg class="svg__first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">  <path fill="#ffd700" fill-opacity="1" d="M0,224L48,186.7C96,149,192,75,288,42.7C384,11,480,21,576,48C672,75,768,117,864,160C960,203,1056,245,1152,229.3C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>
+
+    </section>
+    <section class="article__section mt-5 container-fluid" id="paleatoires">
+        <h3 class="text-center mt-3">Plats aléatoires</h3>
+        <div class="card-wrapper-plat">
+
+            <li class="card-plat aleatoire">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#monModal1">
+
+                    <img class="img-responsive card-img" src="assets/images/dinner/di2.jpg " alt="dinner 2.0 ">
+                    <div class="price-stock">
+                        <small class="badge badge-info ml-2 ">Prix : 4000 fcfa</small>
+                        <small class="badge badge-danger ">Stock : épuisé</small>
+                    </div>
+                    <h6 class="lieu card-title">cocody 2 plateau</h6>
+                    <div class="modal fade" id="monModal1" tabindex="-1" role="dialog" aria-labelledby="monModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title card-title" id="monModalLabel1">Plat de 3 personnes </h6>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive card-img" src="assets/images/dinner/di2.jpg " alt="dinner 2.0 ">
+                                    <span class="card-title" title="Garba 2.0"> plat spécial de 3 est connu pour sa qualité de goût hors norme !! venez vous regaler avec votre fpetite famille ou vos potes. </span>
+                                    <div class="price-stock">
+                                        <small class="badge badge-info ml-5 ">Prix : 3000 fcfa</small>
+                                        <small class="badge badge-success disabled">Stock : disponible</small>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Commander</button>
+                                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">retour</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="card-plat aleatoire">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#monModal2">
+
+                    <img class="img-responsive card-img" src="assets/images/garba/ga10.jpg " alt="Garba 2.0 ">
+                    <div class="price-stock">
+                        <small class="badge badge-info ml-2 ">Prix : 1500 fcfa</small>
+                        <small class="badge badge-danger ">Stock : épuisé</small>
+                    </div>
+                    <h6 class="lieu card-title">Vendu à Adjamé Nangui Abrogoua</h6>
+                    <div class="modal fade" id="monModal2" tabindex="-1" role="dialog" aria-labelledby="monModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title card-title" id="monModalLabel2">Plat de 3 personnes </h6>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive card-img" src="assets/images/garba/ga10.jpg " alt="lunch super doux ! 2.0 ">
+                                    <span class="card-title" title="Garba 2.0"> plat spécial de 3 est connu pour sa qualité de goût hors norme !! venez vous regaler avec votre fpetite famille ou vos potes. </span>
+                                    <div class="price-stock">
+                                        <small class="badge badge-info ml-5 ">Prix : 1500 fcfa</small>
+                                        <small class="badge badge-success disabled">Stock : disponible</small>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Commander</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">retour</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="card-plat aleatoire">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#monModal4">
+
+                    <img class="img-responsive card-img" src="assets/images/food/fo5.jpg " alt="">
+                    <div class="price-stock">
+                        <small class="badge badge-info ml-2 ">Prix : 1200 fcfa</small>
+                        <small class="badge badge-warning ">Stock : disponible</small>
+                    </div>
+                    <h6 class="lieu card-title">Yopougon fade figayo</h6>
+                    <div class="modal fade" id="monModal4" tabindex="-1" role="dialog" aria-labelledby="monModalLabel4" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title card-title" id="monModalLabel4">Plat de 2 personnes </h6>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive card-img" src="assets/images/food/fo2.jpg " alt="dinner 2.0 ">
+                                    <span class="card-title" title="Garba 2.0"> plat spécial de 3 est connu pour sa qualité de goût hors norme !! venez vous regaler avec votre fpetite famille ou vos potes. </span>
+                                    <div class="price-stock">
+                                        <small class="badge badge-info ml-5 ">Prix : 3000 fcfa</small>
+                                        <small class="badge badge-success disabled">Stock : épuisé</small>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Commander</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">retour</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+
+            <li class="card-plat aleatoire">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#monModal7">
+
+                    <img class="img-responsive card-img" src="assets/images/pizza/pi2.jpg " alt="dinner 2.0 ">
+                    <div class="price-stock">
+                        <small class="badge badge-info ml-2 ">Prix : 4000 fcfa</small>
+                        <small class="badge badge-success ">Stock : épuisé</small>
+                    </div>
+                    <h6 class="lieu card-title">cocody 2 plateau</h6>
+                    <div class="modal fade" id="monModal7" tabindex="-1" role="dialog" aria-labelledby="monModalLabel7" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title card-title" id="monModalLabel7">Plat de 3 personnes </h6>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive card-img" src="assets/images/pizza/pi2.jpg " alt="dinner 2.0 ">
+                                    <span class="card-title" title="Garba 2.0"> plat spécial de 3 est connu pour sa qualité de goût hors norme !! venez vous regaler avec votre fpetite famille ou vos potes. </span>
+                                    <div class="price-stock">
+                                        <small class="badge badge-info ml-5 ">Prix : 3000 fcfa</small>
+                                        <small class="badge badge-success disabled">Stock : épuisé</small>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Commander</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">retour</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="card-plat aleatoire">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#monModal13">
+
+                    <img class="img-responsive card-img" src="assets/images/garba/ga11.jpg " alt="Garba 2.0 ">
+                    <div class="price-stock">
+                        <small class="badge badge-info ml-2 ">Prix : 1500 fcfa</small>
+                        <small class="badge badge-success ">Stock : disponible</small>
+                    </div>
+                    <h6 class="lieu card-title">Vendu à Adjamé Nangui Abrogoua</h6>
+                    <div class="modal fade" id="monModal13" tabindex="-1" role="dialog" aria-labelledby="monModalLabel13" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title card-title" id="monModalLabel13">Plat de 3 personnes </h6>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive card-img" src="assets/images/garba/ga11.jpg " alt="lunch super doux ! 2.0 ">
+                                    <span class="card-title" title="Garba 2.0"> plat spécial de 3 est connu pour sa qualité de goût hors norme !! venez vous regaler avec votre fpetite famille ou vos potes. </span>
+                                    <div class="price-stock">
+                                        <small class="badge badge-info ml-5 ">Prix : 1500 fcfa</small>
+                                        <small class="badge badge-success">Stock : disponible</small>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Commander</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">retour</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="card-plat aleatoire">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#monModal6">
+
+                    <img class="img-responsive card-img" src="assets/images/croissant/cr8.jpg " alt="dinner 2.0 ">
+                    <div class="price-stock">
+                        <small class="badge badge-info ml-2 ">Prix : 4000 fcfa</small>
+                        <small class="badge badge-success ">Stock : disponible</small>
+                    </div>
+                    <h6 class="lieu card-title">cocody 2 plateau</h6>
+                    <div class="modal fade" id="monModal6" tabindex="-1" role="dialog" aria-labelledby="monModalLabel6" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title card-title" id="monModalLabel6">Plat de 3 personnes </h6>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive card-img" src="assets/images/croissant/cr8.jpg " alt="dinner 2.0 ">
+                                    <span class="card-title" title="Garba 2.0"> plat spécial de 3 est connu pour sa qualité de goût hors norme !! venez vous regaler avec votre fpetite famille ou vos potes. </span>
+                                    <div class="price-stock">
+                                        <small class="badge badge-info ml-5 ">Prix : 3000 fcfa</small>
+                                        <small class="badge badge-success disabled">Stock : disponible</small>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Commander</button>
+                                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">retour</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="card-plat aleatoire">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#monModal5">
+
+                    <img class="img-responsive card-img" src="assets/images/caffe/ca2.jpg " alt="dinner 2.0 ">
+                    <div class="price-stock">
+                        <small class="badge badge-info ml-2 ">Prix : 500 fcfa</small>
+                        <small class="badge badge-danger ">Stock : épuisé</small>
+                    </div>
+                    <h6 class="lieu card-title">cocody 2 plateau</h6>
+                    <div class="modal fade" id="monModal5" tabindex="-1" role="dialog" aria-labelledby="monModalLabel5" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title card-title" id="monModalLabel5">Plat d'une personne </h6>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive card-img" src="assets/images/caffe/ca2.jpg " alt="dinner 2.0 ">
+                                    <span class="card-title" title="Garba 2.0"> plat spécial d'une personne est connu pour sa qualité de goût hors norme qui vous réveille!! venez vous rechauffer avec votre caffé X. </span>
+                                    <div class="price-stock">
+                                        <small class="badge badge-info ml-5 ">Prix : 500 fcfa</small>
+                                        <small class="badge badge-success disabled">Stock : disponible</small>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Commander</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">retour</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="card-plat aleatoire">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#monModal8">
+
+                    <img class="img-responsive card-img" src="assets/images/dinner/di8.jpg " alt="dinner 2.0 ">
+                    <div class="price-stock">
+                        <small class="badge badge-info ml-2 ">Prix : 4000 fcfa</small>
+                        <small class="badge badge-success ">Stock : disponible</small>
+                    </div>
+                    <h6 class="lieu card-title">cocody 2 plateau</h6>
+                    <div class="modal fade" id="monModal1" tabindex="-1" role="dialog" aria-labelledby="monModalLabel8" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title card-title" id="monModalLabel8">Plat de 3 personnes </h6>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive card-img" src="assets/images/dinner/di8.jpg " alt="dinner 2.0 ">
+                                    <span class="card-title" title="Garba 2.0"> plat spécial de 3 est connu pour sa qualité de goût hors norme !! venez vous regaler avec votre fpetite famille ou vos potes. </span>
+                                    <div class="price-stock">
+                                        <small class="badge badge-info ml-5 ">Prix : 3000 fcfa</small>
+                                        <small class="badge badge-success disabled">Stock : disponible</small>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Commander</button>
+                                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">retour</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="card-plat aleatoire">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#monModal9">
+
+                    <img class="img-responsive card-img" src="assets/images/pizza/pi9.jpg " alt="dinner 2.0 ">
+                    <div class="price-stock">
+                        <small class="badge badge-info ml-2 ">Prix : 4000 fcfa</small>
+                        <small class="badge badge-danger ">Stock : épuisé</small>
+                    </div>
+                    <h6 class="lieu card-title">cocody 2 plateau</h6>
+                    <div class="modal fade" id="monModal9" tabindex="-1" role="dialog" aria-labelledby="monModalLabel9" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title card-title" id="monModalLabel9">Plat de 3 personnes </h6>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive card-img" src="assets/images/pizza/pi4.jpg " alt="dinner 2.0 ">
+                                    <span class="card-title" title="Garba 2.0"> plat spécial de 3 est connu pour sa qualité de goût hors norme !! venez vous regaler avec votre fpetite famille ou vos potes. </span>
+                                    <div class="price-stock">
+                                        <small class="badge badge-info ml-5 ">Prix : 3000 fcfa</small>
+                                        <small class="badge badge-success disabled">Stock : disponible</small>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Commander</button>
+                                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">retour</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="card-plat aleatoire" class="card-plat aleatoire">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#monModal14">
+                    <a href="#">
+                        <img class="img-responsive card-img" src="assets/images/garba/ga11.jpg " alt="Garba 2.0 ">
+                        <h6 class="lieu card-title">Vendu à Yopougon camp millitaire </h6>
+                        <small class="badge badge-info ml-2 ">Prix : 1300 fcfa</small>
+
+                    </a>
+            </li>
+            <li class="card-plat aleatoire">
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#monModal14">
+
+                    <img class="img-responsive card-img" src="assets/images/garba/ga14.jpg " alt="Garba 2.0 ">
+                    <div class="price-stock">
+                        <small class="badge badge-info ml-2 ">Prix : 2000 fcfa</small>
+                        <small class="badge badge-danger ">Stock : épuisé</small>
+                    </div>
+                    <h6 class="lieu card-title">Vendu à cocody 2 plateau</h6>
+                    <div class="modal fade" id="monModal14" tabindex="-1" role="dialog" aria-labelledby="monModalLabel14" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title card-title" id="monModalLabel3">Plat de 3 personnes </h6>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive card-img" src="assets/images/dinner/di2.jpg " alt="Garba 2.0 ">
+                                    <span class="card-title" title="Garba 2.0"> plat spécial de 3 est connu pour sa qualité de goût hors norme !! venez vous regaler avec votre fpetite famille ou vos potes. </span>
+                                    <div class="price-stock">
+                                        <small class="badge badge-info ml-5 ">Prix : 3000 fcfa</small>
+                                        <small class="badge badge-danger disabled">Stock : épuisé</small>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Commander</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">retour</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="card-plat aleatoire">
+                <a href="#">
+                    <img class="img-responsive card-img" src="assets/images/breakfast/br7.jpg " alt="Garba 2.0 ">
+                    <h6 class="lieu card-title"> Vendu à Bouaké Restaut Zeus </h6>
+                    <small class="badge badge-info ml-2 ">Prix : 7000 fcfa</small>
+                    <small class="badge badge-success ">Stock : disponible</small>
+                </a>
+
+            </li>
+            <li class="card-plat aleatoire">
+                <a href="#">
+                    <img class="img-responsive card-img" src="assets/images/lunch/lu7.jpg " alt="Garba 2.0 ">
+                    <h6 class="lieu card-title">Vendu à Yopougon Palais </h6>
+                    <small class="badge badge-info ml-2 ">Prix : 4000 fcfa</small>
+
+
+                </a>
+            </li>
+            <li class="card-plat aleatoire">
+                <a href="#">
+                    <img class="img-responsive card-img" src="assets/images/croissant/cr1.jpg " alt="Garba 2.0 ">
+                    <h6 class="lieu card-title">Vendu à Liberté facommissariat jeu de jambe</h6>
+
+                    <small class="badge badge-info ml-2 ">Prix : 5000 fcfa</small>
+                </a>
+            </li>
+            <li class="card-plat aleatoire">
+                <a href="#">
+                    <img class="img-responsive card-img" src="assets/images/dinner/di2.jpg " alt="Garba 2.0 ">
+                    <h6 class="lieu card-title">Vendu à Koumassi marché sud </h6>
+                    <small class="badge badge-info ml-2 ">Prix : 7000 fcfa</small>
+
+
+                </a>
+            </li>
+
+        </div>
+    </section>
+    </div>
+    <marquee class="mt-5" behavior="left" direction="" speed="2">
+        <h2>MAINTENU : <small>Par nos étudiants en formation.</small></h2>
+    </marquee>
+    <!--
+    <article class="article__second mt-5">
+        <h2 class="text-center">Nos délicieux Croissants</h2>
+        <div class="card-wrapper-plat">
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Nom du croissant</h6>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, velit consequatur!</p>
+                    <a href="" id=""></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Nom du croissant</h6>
+                    <a href="" id=""></a>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, velit consequatur!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Nom croissants</h6>
+                    <a href="" id=""></a>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, velit consequatur!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Nom du croissant</h6>
+                    <a href="" id=""></a>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, velit consequatur!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Nom du croissant</h6>
+                    <a href="" id=""></a>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, velit consequatur!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Nom du croissant</h6>
+                    <a href="" id=""></a>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, velit consequatur!</p>
+                </div>
+            </div>
+        </div>
+    </article>
+-->
+    </section>
+    <a class="remote__button btn fixed-bottom" href="#remote__button">
+        <span class="fleche__top">Top &uarr;</span>
+    </a>
+    <footer>
+        <div class="form__block" id="contact">
+            <h3>NOUS CONTACTEZ</h3>
+            <form action="">
+                <label for="fname">First and Last Name</label>
+                <input type="text" name="" id="fname" placeholder="Cerveau plus">
+                <label for="email">Email</label>
+                <input type="email" name="" id="lname" placeholder="digitalsouag@gmail.com">
+                <label for="country">Commune/Ville</label>
+                <select name="" id="country">
+                    <option value="Divo">Divo</option>
+                    <option value="Yopougon">Yopougon</option>
+                    <option value="Adjamé">Adjamé</option>
+                    <option value="Abobo">Abobo</option>
+                    <option value="Cocody">Cocody</option>
+                    <option value="Koumassi">Koumassi</option>
+                    <option value="Bouake">Bouaké</option>
+                    <option value="Bouafle">Bouaflé</option>
+                    <option value="Man">Man</option>
+                    <option value="Soubré">Soubré</option>
+                    <option value="Autre">Autre</option>
+                </select>
+                <label for="tarea">Message</label>
+                <textarea type="text" name="" id="tarea" placeholder="Your Message .."></textarea>
+                <ul style="display: flex;">
+
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Del">
+                </ul>
+            </form>
+        </div>
+        <hr>
+        <div class="copy__section">
+            <p>Copyright &copy; tous droits réservés MONDABALI 2021 . Conçu avec <span class="hearts">&hearts;</span> par <a href="https://fb.com/alban.kedi"> Alban Okoby  </a> <br>
+                <a href="assets/certificat/anssi_ssi.html"></a>
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+</body>
+
+</html>
