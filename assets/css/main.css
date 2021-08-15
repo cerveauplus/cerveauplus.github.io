@@ -1,14 +1,14 @@
 /* COLORS */
 
 :root {
-    --body-bg-color: #05131a;
+    --body-bg-color: ;
     --body-color: white;
     /* --navbar-bg-color: #ffd700; */
     --navbar-bg-color: #05131a;
     /* --navbar-color: black; */
     --banner-color: white;
     --header-bg-color: ;
-    --wave-color: #2173dd;
+    --wave-color: #ebb217;
     --aleatoire-title-color: black;
     --footer-bg-color: #05131a;
 }
@@ -280,9 +280,9 @@ body {
 
 footer {
     /* background: linear-gradient( rgb(39, 39, 39), black, rgb(29, 23, 23)); */
-    background: var(--footer-bg-color);
     padding-top: 5rem;
     padding-bottom: 5rem;
+    background: var(--footer-bg-color);
 }
 
 
@@ -291,6 +291,13 @@ footer {
 .form__block {
     height: max(35rem);
 }
+
+.form__title {
+    color: white;
+}
+
+.copy__section,
+.follow__me {}
 
 h3 {
     text-align: center;
