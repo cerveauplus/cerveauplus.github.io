@@ -111,6 +111,15 @@
     transition: none;
 }
 
+#Compte {
+    animation-duration: 1s;
+    animation-name: bouge;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    transform: scale(.7);
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 @keyframes bouge {
     0% {
         transform: scale(.7);
@@ -118,28 +127,13 @@
     30% {
         transform: scale(.4);
     }
-    40% {
-        background: #ffd700;
-        transform: scale(.5);
-    }
     60% {
-        background: #6b5d0a;
-        color: white;
-    }
-    70% {
-        background: #fcd706;
-        color: black;
-        transform: scale(.3);
-    }
-    80% {
-        background: #f5e275;
-        color: black;
-        transform: scale(.4);
-    }
-    90% {
-        background: #f5bf0d;
+        background: #05131a;
         color: white;
         transform: scale(.6);
+    }
+    80% {
+        transform: scale(.4);
     }
     100% {
         transform: scale(.5);
