@@ -112,6 +112,43 @@ header ul li {
 }
 
 
+/* section des cartes */
+
+.carte {
+    border: 1px solid solid;
+    border-radius: .6rem;
+    list-style: none;
+    box-shadow: 0 0 0.9rem rgb(0, 0, 0);
+}
+
+.carte img {
+    width: 100%;
+    transform: scale(.9);
+    max-height: 15rem;
+}
+
+.carte img:hover {
+    transform: scale(.8);
+    transition: 300ms ease-out;
+    filter: grayscale(1);
+}
+
+.carte h4,
+p {
+    text-align: center;
+}
+
+.grande-carte {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+    grid-gap: 1.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
 /* FOOTER */
 
 footer {
