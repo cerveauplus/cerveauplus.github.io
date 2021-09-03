@@ -25,13 +25,11 @@ header {
     justify-content: space-around;
     width: 100%;
     color: var(--header);
-    position: fixed;
     /* box-shadow: 0 0 3px 3px white; */
 }
 
 header ul {
     list-style: none;
-    /* margin-right: 17%; */
     margin-top: 19px;
     display: flex;
     font-size: 17px;
@@ -45,8 +43,7 @@ header ul li {
 
 .empty__banner {
     background: var(--header__bottom__bg);
-    padding: 19px;
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
 }
 
 
@@ -124,7 +121,7 @@ header ul li {
 .carte img {
     width: 100%;
     transform: scale(.9);
-    max-height: 15rem;
+    max-height: 8rem;
 }
 
 .carte img:hover {
@@ -142,7 +139,7 @@ p {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
     grid-gap: 1.7rem;
     margin-left: 1rem;
     margin-right: 1rem;

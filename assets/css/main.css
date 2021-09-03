@@ -11,6 +11,8 @@
     --wave-color: #ebb217;
     --aleatoire-title-color: black;
     --footer-bg-color: #05131a;
+    --footer-form-bg: white;
+    --footer-form: rgb(17, 17, 17);
 }
 
 
@@ -20,6 +22,11 @@
 .is-preload {
     background: var(--body-bg-color);
     color: var(--body-color);
+}
+
+header .header-logo {
+    width: 45px;
+    border-radius: 75px;
 }
 
 .header__bottom__section,
@@ -123,20 +130,25 @@
 @keyframes bouge {
     0% {
         transform: scale(.7);
+        background: #05131a;
     }
     30% {
         transform: scale(.4);
+        background: #05131a;
     }
     60% {
         background: #05131a;
         color: white;
         transform: scale(.6);
+        background: #05131a;
     }
     80% {
         transform: scale(.4);
+        background: #05131a;
     }
     100% {
         transform: scale(.5);
+        background: #05131a;
     }
 }
 
@@ -278,12 +290,10 @@ footer {
     height: max(35rem);
 }
 
-.form__title {
-    color: white;
-}
 
-.copy__section,
-.follow__me {}
+/* .form__title {
+    color: white;
+} */
 
 h3 {
     text-align: center;
@@ -300,7 +310,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    outline-color: rgb(130, 253, 136);
+    outline-color: var(--footer-bg-color);
 }
 
 input[type=reset] {
@@ -337,8 +347,9 @@ input[type=reset]:hover {
 
 .form__block {
     padding: 20px;
-    border-radius: 5px;
-    background: var(--footer-form-color);
+    border-radius: 2rem;
+    background: var(--footer-form-bg);
+    color: var(--footer-form);
     margin-left: 20%;
     margin-right: 20%;
 }
