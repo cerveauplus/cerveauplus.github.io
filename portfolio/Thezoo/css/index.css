@@ -32,6 +32,12 @@ screen and (max-width:1160px) {
     margin-top: 7%;
 }
 
+@media screen and (min-width:654px) and (max-width:764px) {
+    .first_article h3 {
+        margin-top: 97px;
+    }
+}
+
 .first_article .card-wrapper,
 .second_article .card-wrapper,
 .third_article .card-wrapper {
