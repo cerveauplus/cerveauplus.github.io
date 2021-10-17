@@ -107,7 +107,7 @@ div>h3 {
     margin-bottom: 2rem;
 }
 
-@media only screen and (min-width:765px) {
+@media all and (min-width:765px) {
     .first_article .caption {
         margin: 1rem;
         margin-top: 8rem;
