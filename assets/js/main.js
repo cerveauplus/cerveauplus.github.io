@@ -18,7 +18,7 @@
     });
 
 })(jQuery);
-// Carousel garba
+// BEGIN articles(garba) Carousel
 let items = document.querySelectorAll('.carousel .carousel-item')
 
 items.forEach((el) => {
@@ -39,7 +39,7 @@ var Affiche = document.getElementById("Compte");
 
 function Rebour() {
     var date1 = new Date();
-    var date2 = new Date("Sep 15 00:00:00 2021");
+    var date2 = new Date("Oct 20 00:00:00 2021");
     var sec = (date2 - date1) / 1000;
     var n = 24 * 3600;
     if (sec > 0) {
