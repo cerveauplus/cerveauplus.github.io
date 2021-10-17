@@ -38,7 +38,6 @@ screen and (max-width:1160px) {
     }
 }
 
-.first_article .card-wrapper,
 .second_article .card-wrapper,
 .third_article .card-wrapper {
     /* width: 900px; */
@@ -46,6 +45,14 @@ screen and (max-width:1160px) {
     grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
     grid-gap: 1.8rem;
     margin-right: 2rem;
+}
+
+.first_article .card-wrapper {
+    overflow-x: scroll;
+    overflow-block: hidden;
+    display: grid;
+    grid-template-columns: 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+    grid-gap: 1.7rem;
 }
 
 .first_article .card-wrapper .card,
