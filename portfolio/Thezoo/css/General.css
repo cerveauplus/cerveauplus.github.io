@@ -48,6 +48,13 @@
     }
 }
 
+@media screen and (max-width:567px) {
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
 @media screen and (max-width:1024px) {
     .bottom_banner_wave {
         visibility: hidden;
