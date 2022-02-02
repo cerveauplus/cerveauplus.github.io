@@ -39,7 +39,7 @@ var Affiche = document.getElementById("Compte");
 
 function Rebour() {
     var date1 = new Date();
-    var date2 = new Date("Oct 20 00:00:00 2021");
+    var date2 = new Date("Feb 20 00:00:00 2022");
     var sec = (date2 - date1) / 1000;
     var n = 24 * 3600;
     if (sec > 0) {
@@ -79,7 +79,7 @@ function dateEtHeure() {
 } // Fin fonction dateEtHeure
 
 // Pour actualiser l'heure chaque minutes, on rappelle la fonction dateEtHeure()
-// toutes les 100 millisecondes, donc toutes les secondes
+// toutes les 100 millisecondes, donc à chaque seconde.
 window.onload = function() {
     setInterval("dateEtHeure()", 100);
 };

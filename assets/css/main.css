@@ -3,18 +3,17 @@
 :root {
     --body-bg-color: white;
     --body-color: white;
-    /* --navbar-bg-color: #ffd700; */
-    --navbar-bg-color: #05131a;
+     /*--navbar-bg-color: #ffd720; */
+    --navbar-bg-color: #09131a;
     /* --navbar-color: black; */
     --banner-color: white;
-    --header-bg-color: ;
+    --header-bg-color: none;
     --wave-color: #ebb217;
     --aleatoire-title-color: black;
     --footer-bg-color: #05131a;
     --footer-form-bg: white;
     --footer-form: rgb(17, 17, 17);
 }
-
 
 /* END COLORS */
 
@@ -117,7 +116,7 @@ header .header-logo {
     transform: none;
     transition: none;
 }
-
+/* Compte à rebours */
 #Compte {
     animation-duration: 1s;
     animation-name: bouge;
@@ -164,7 +163,7 @@ header .header-logo {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
     grid-gap: 1.5rem;
     margin-left: 1%;
     margin-right: 1%;
@@ -175,37 +174,48 @@ header .header-logo {
     border-radius: 0.5rem;
     box-shadow: 0.05rem 0.1rem 0.9rem 0.5rem rgb(163, 163, 155);
     padding-bottom: 1rem;
+    overflow:hidden;
+
+
+}
+.img-box {
+    overflow: hidden;
 }
 
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 .card-img {
-    /* width: 120rem; */
-    height: max(13rem);
+    height: 150px;
+    max-width: 600px;
     margin-left: 0%;
     margin-right: 1%;
     border-radius: .3rem;
-    margin-top: .6rem;
-    transform: scale(.97);
+    /* transform: scale(.7); */
     filter: grayscale(0);
-}
+    transition: 400ms ease-in-out;
 
-.card-plat img {
-    /* min-width: 23rem; */
 }
 
 .card-img:hover {
-    transition: transform 200ms ease-out;
+    transition: 700ms ease-in-out;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-    transform: scale(.90);
-    filter: grayscale(.6);
+    transform: scale(1.7);
+    filter: grayscale(.8);
+    overflow: hidden;
 }
 
 .card-title {
     text-align: center;
-    color: black
+    color: black; word-wrap: break-word;
+    margin-right: 5px;
 }
 
-.price-stock .price {
-    margin-left: 21px;
+.price-stock {
+    /* margin-left: 21px; */
+    text-align: center;
 }
 
 .card-plat>:last-child {
@@ -389,7 +399,7 @@ footer hr {
 }
 
 
-/* Carousel garba */
+/* le Carousel du garba */
 
 .div2 {
     display: block;
@@ -404,10 +414,7 @@ footer hr {
 }
 
 .div2:first-of-type {
-    /* For increasing performance 
-                         ID/Class should've been used. 
-                         For a small demo 
-                         it's okaish for now */
+    
     animation: showup 7s infinite;
 }
 
@@ -487,7 +494,7 @@ footer hr {
 }
 
 
-/* medium and up screens */
+/* les écrans moyens et supérieur ( > 768px ) */
 
 @media (min-width: 768px) {
     .carousel-inner .carousel-item-end.active,
